@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Audio player HTML5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/AudioPlayer.css">
     <style>
@@ -19,6 +19,20 @@
   </head>
 
   <body>
+        <script> 
+          let mp3s = []; 
+      //(async () => { 
+        const response = await fetch('https://api.github.com/repos/studioqradio/studioqradio.github.io/mp3/'); 
+        const data = await response.json(); 
+        
+        for (let file of data) { 
+          //mp3s.push({'icon': iconImage, 'title': `${file.name}`, 'file': 'mp3/try-everything.mp3'});
+          console.log(file);
+          //htmlString += `${file.name}`; 
+        } 
+        //document.getElementsByClassName("substitute_div")[0].innerHTML = htmlString; 
+      //})() 
+    </script>
       <!-- Audio player container-->
      <div id='player'></div>
 
