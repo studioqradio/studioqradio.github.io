@@ -17,3 +17,4 @@ P.S. I'm too lazy to program this correctly so please don't do crazy shit to thi
 # TODO
 - [ ] make it a real radio station streaming 24/7 (song choice alg based on date maybe?)
 - [ ] Dope-ass bumper tracks
+- [ ] fwd to studioqradio.com domain
