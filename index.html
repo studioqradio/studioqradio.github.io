@@ -34,11 +34,10 @@
       (async () => { 
         let mp3s = []; 
         let people = [];
-        let pics = [];
         const response_im = await fetch('https://api.github.com/repos/studioqradio/studioqradio.github.io/contents/mp3/pics/'); 
-        const data_im = await response.json(); 
+        const data_im = await response_im.json(); 
         
-        for (let pic of pics) { 
+        for (let pic of data_im) { 
             people.push(pic)
         }
         
