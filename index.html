@@ -37,8 +37,8 @@
         const data = await response.json(); 
         
         for (let file of data) { 
-          //mp3s.push({'icon': iconImage, 'title': `${file.name}`, 'file': 'mp3/try-everything.mp3'});
-          console.log(file);
+          mp3s.push({'icon': iconImage, 'title': `${file.name}`, 'file': `${file.path}`});
+          //console.log(file);
           //htmlString += `${file.name}`; 
         } 
         //document.getElementsByClassName("substitute_div")[0].innerHTML = htmlString; 
@@ -51,10 +51,7 @@
             volume   : 0.7,
             autoPlay : true,
             notification: false,
-            playList: [
-                {'icon': iconImage, 'title': 'Try Everything', 'file': 'mp3/try-everything.mp3'},
-                {'icon': iconImage, 'title': 'Let It Go', 'file': 'mp3/let-it-go.mp3'}
-          ]
+            playList: mp3s
         });
         
               })() 
