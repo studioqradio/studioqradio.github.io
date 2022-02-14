@@ -51,7 +51,7 @@
           if (file.name.indexOf(".mp3") !== -1) {
             
             for (let p in people) {
-              if (p.split('')[0] in file.name){
+              if (file.name.indexOf(p.name.split('')[0]) !== -1){
                 iconImage = p.path
               }
             }
