@@ -37,7 +37,7 @@
         const data = await response.json(); 
         
         for (let file of data) { 
-          if '.mp3' in `${file.name}`{
+          if ('.mp3' in file.name) {
             mp3s.push({'icon': iconImage, 'title': `${file.name}`, 'file': `${file.path}`});
           }
           //console.log(file);
