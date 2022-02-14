@@ -51,9 +51,10 @@
           if (file.name.indexOf(".mp3") !== -1) {
             
             for (let p in people) {
-              if (file.name.indexOf(p.name.split('.')[0]) !== -1){
-                iconImage = p.path
-              }
+              console.log(p);
+              //if (file.name.indexOf(p.name.split('.')[0]) !== -1){
+              //  iconImage = p.path
+              //}
             }
             mp3s.push({'icon': iconImage, 'title': `${file.name}`, 'file': `${file.path}`});
           }
