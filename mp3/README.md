@@ -6,6 +6,9 @@
 
 listen at: studioqradio.github.io
 
+# Pics
+- add a YOURNAME.jpg file to pics/ (must be .jpg)
+
 # Problems? Message Monk:
 monksevillair@gmail.com (530) 321-1008
 
