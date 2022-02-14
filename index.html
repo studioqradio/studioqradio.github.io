@@ -37,10 +37,6 @@
         const response_im = await fetch('https://api.github.com/repos/studioqradio/studioqradio.github.io/contents/mp3/pics/'); 
         const data_im = await response_im.json(); 
         
-        for (let pic of data_im) { 
-            people.push(pic)
-        }
-        
         const response = await fetch('https://api.github.com/repos/studioqradio/studioqradio.github.io/contents/mp3/'); 
         const data = await response.json(); 
          // test image for web notifications
@@ -50,7 +46,7 @@
           iconImage = null;
           if (file.name.indexOf(".mp3") !== -1) {
             
-            for (let p of people) {
+            for (let p of data_im) {
               console.log(p);
               //if (file.name.indexOf(p.name.split('.')[0]) !== -1){
               //  iconImage = p.path
