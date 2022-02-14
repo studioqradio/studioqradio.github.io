@@ -45,8 +45,8 @@
           if (file.name.indexOf(".mp3") !== -1) {
             for (let p of people) {
               if (file.name.indexOf(p) !== -1) {
-                console.log(file.name);
                 iconImage = "https://studioqradio.github.io/mp3/pics/"+p+".jpg"
+                console.log(iconImage);
               }
             }
             mp3s.push({'icon': iconImage, 'title': `${file.name}`, 'file': `${file.path}`});
