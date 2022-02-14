@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Audio player HTML5</title>
+    <title>Studio Q Radio!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,7 +37,7 @@
         const data = await response.json(); 
         
         for (let file of data) { 
-          if ('.mp3' in file.name) {
+          if (file.name.indexOf(".mp3") !== -1) {
             mp3s.push({'icon': iconImage, 'title': `${file.name}`, 'file': `${file.path}`});
           }
           //console.log(file);
