@@ -13,3 +13,6 @@ listen at: studioqradio.github.io
 monksevillair@gmail.com (530) 321-1008
 
 P.S. I'm too lazy to program this correctly so please don't do crazy shit to this github page <3 monk
+
+# TODO
+- [ ] make it a real radio station streaming 24/7 (song choice alg based on date maybe?)
